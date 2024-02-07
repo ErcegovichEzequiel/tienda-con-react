@@ -1,3 +1,5 @@
+import './Home.css';
+
 function Merpago() {
     return (
         <div className="mp">

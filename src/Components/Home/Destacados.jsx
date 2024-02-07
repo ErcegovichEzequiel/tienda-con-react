@@ -8,8 +8,9 @@ function Destacados() {
 }
 export const JuegosDestacados = () => {
     return (
+        <>
+        <Destacados/>
         <section className="jgeneral">
-            <Destacados></Destacados>
             <div className="jd">
                 <h3>¡Destacados del Mes!</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/si2hWQxeBt0?si=AXS0kzKMph2WQ52o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -48,5 +49,6 @@ export const JuegosDestacados = () => {
                 <p>¡Shadow Gambit: The Cursed Crew ya está disponible en PlayStation 5! En este juego de estrategia y sigilo, únete a un barco fantasma viviente, reúne una tripulación pirata maldita y adopta poderes mágicos para desafiar al ejército amenazador de la Inquisición en la búsqueda del misterioso tesoro del Capitán Mordechai. ¡Juega Shadow Gambit: The Cursed Crew ahora!</p>
             </div>
         </section>
+        </>
     )
 }

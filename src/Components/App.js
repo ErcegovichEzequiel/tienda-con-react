@@ -1,26 +1,22 @@
 import Banner from './Banner/Banner'
 import Nav from './Navbar/Nav'
 import Footer from './Footer/Footer'
-import Carousel from './Home/Carousel'
-import Merpago from './Home/Merpago'
-import { JuegosDestacados } from './Destacados/Destacados'
+import { Home } from './Home/Home';
 
 
 function App() {
-  return ( 
+  return (
     <div className="App">
-      <Banner/>
-      <Nav/>
-      <Carousel/>
-      <Merpago/>
-    <JuegosDestacados/>
-      <Footer/>
+      <Banner />
+      <Nav />
+      <Home/>
 
+      <Footer />
 
 
 
     </div>
-);
+  );
 }
 
 export default App;
