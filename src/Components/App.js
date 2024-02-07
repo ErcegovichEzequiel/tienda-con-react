@@ -4,6 +4,7 @@ import Footer from './Footer/Footer'
 import { Home } from './Home/Home';
 import { IniciaSesion } from './IniSesion/IniciaSesion';
 import { Registrarme } from "./Registrarme/Registrarme";
+import { Carrito } from './Carrito/Carrito';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Home/>
       <IniciaSesion />
       <Registrarme />
+      <Carrito />
       <Footer />
     </div>
   );

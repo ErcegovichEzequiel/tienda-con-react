@@ -1,4 +1,4 @@
-import "../IniSesion/IniciaSesion"
+import "../GeneralComponentes.css"
 import { FaUserLock } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 
