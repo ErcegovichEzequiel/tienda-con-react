@@ -5,7 +5,6 @@ function footer() {
         <footer id="footer">
             <div className="redessociales">
                 <h3>Siguenos</h3>
-
                 <li><i className="fa-brands fa-square-instagram"></i></li>
                 <li><i className="fa-brands fa-facebook"></i></li>
                 <li><i className="fa-brands fa-twitter"></i></li>
