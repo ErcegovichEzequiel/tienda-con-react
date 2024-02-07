@@ -1,8 +1,12 @@
 .mp {
-    max-width: 93%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: auto;
     max-height: 100px;
-    margin: 20px auto 0 auto;
+    /* margin: 20px auto 0 auto; */
 }
+
 .jgeneral {
     display: flex;
     flex-direction: row;
@@ -42,34 +46,36 @@
     margin: auto;
     max-width: 100%;
     max-height: 100%;
-
+    justify-content: center;
+    object-position: center;
 }
 
+/* .jd h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+margin: auto;
+margin-top: 330px;
+    color: rgb(255, 140, 0);
+} */
 .jd p {
     overflow-y: scroll;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 5%;
     max-width: 100%;
     max-height: 100%;
     padding-top: 10px;
-    height: 100px;
+    height: 160px;
     margin-bottom: 3px;
-}
-
-.jd h4 {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-    color: rgb(255, 140, 0);
 }
 
 .desta {
     color: rgb(0, 0, 0);
-margin: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 30px;
-    margin: auto;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -90,5 +96,3 @@ margin: 30%;
         width: 30%;
     }
 }
-
-

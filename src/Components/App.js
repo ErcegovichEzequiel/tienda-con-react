@@ -10,11 +10,7 @@ function App() {
       <Banner />
       <Nav />
       <Home/>
-
       <Footer />
-
-
-
     </div>
   );
 }

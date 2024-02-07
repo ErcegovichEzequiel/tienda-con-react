@@ -5,13 +5,10 @@ import './Home.css'
 
 export const Home = () => {
     return (
-        <>
+    <>
     <DarkVariantExample/>
     <Merpago/>
-    <JuegosDestacados/>
-    
-
-
+    <JuegosDestacados/> 
     </> 
     )
 }
