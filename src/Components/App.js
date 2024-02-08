@@ -7,18 +7,22 @@ import { IniciaSesion } from './IniSesion/IniciaSesion';
 import { Registrarme } from "./Registrarme/Registrarme";
 import { Carrito } from './Carrito/Carrito';
 
+import Juegos from './Juegos/Juegos.jsx';
+
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <Nav />      
-      <Home/>
-   
+      <Nav />
+      <Home />
+
       <IniciaSesion />
       <Registrarme />
       <Carrito />
-      
+
+      <Juegos />
+
       <Footer />
     </div>
   );
