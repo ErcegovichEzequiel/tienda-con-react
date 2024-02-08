@@ -1,18 +1,16 @@
-
-import "./Juegos.css";
-
+import "../GeneralComponentes.css";
 
 function Juegos() {
     return (
-        <section>
-            <h2>JUEGOS MAS ESPERADOS EN FULL STACK GAMES</h2>
+        <section className="formulario">
+            <h3>JUEGOS MAS ESPERADOS EN FULL STACK GAMES</h3>
             <div className="container">
 
                 <div className="column">
 
                     <img
                         className="img-1"
-                        src="/public/img/Tienda/blue-protocol.jpg"
+                        src="/img/Tienda/blue-protocol.jpg"
                         alt="First slide"
                     />
 
@@ -34,7 +32,7 @@ function Juegos() {
                 </div>
 
                 <div className="column">
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button">Comprar</button>
                 </div>
 
             </div>
@@ -47,7 +45,7 @@ function Juegos() {
 
                     <img
                         className="img-1"
-                        src="/public/img/Tienda/beyond-good-.jpg"
+                        src="/img/Tienda/beyond-good-.jpg"
                         alt="First slide"
                     />
 
@@ -70,7 +68,7 @@ function Juegos() {
                 </div>
 
                 <div className="column">
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button">Comprar</button>
                 </div>
 
             </div>
@@ -81,9 +79,9 @@ function Juegos() {
 
                 <div className="column">
 
-                <img
+                    <img
                         className="img-1"
-                        src="/public/img/Tienda/metroid-prime-4.jpg"
+                        src="/img/Tienda/metroid-prime-4.jpg"
                         alt="First slide"
                     />
 
@@ -92,7 +90,7 @@ function Juegos() {
                 <div className="column">
 
                     <div className="descripcion">
-                        
+
                         <span className="span-1"><strong>Metroid Prime 4</strong></span>
                         <span className="span-4">Switch</span>
                         <p><strong><i>Metroid Prime 4</i></strong>, la cuarta entrega de la saga Prime protagonizada por Samus Aran que salió en GameCube, Wii y Wii U a lo largo de los años, llegará a Nintendo Switch, desarrollada por Retro Studios. Se trata de un nuevo juego de acción y exploración en primera persona, en el que la protagonista tendrá que ir descubriendo los secretos de un buen número de planetas y alienígenas.</p>
@@ -104,7 +102,7 @@ function Juegos() {
                 </div>
 
                 <div className="column">
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button">Comprar</button>
                 </div>
 
             </div>
@@ -115,11 +113,11 @@ function Juegos() {
 
                 <div className="column">
 
-                <img
+                    <img
                         className="img-1"
-                        src="/public/img/Tienda/star-citizen-201837182459_1b.jpg"
+                        src="/img/Tienda/star-citizen-201837182459_1b.jpg"
                         alt="First slide"
-                />
+                    />
 
                 </div>
 
@@ -139,7 +137,7 @@ function Juegos() {
 
                 <div className="column">
 
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button">Comprar</button>
 
                 </div>
 
@@ -151,12 +149,12 @@ function Juegos() {
 
                 <div className="column">
 
-                <img
+                    <img
                         className="img-1"
-                        src="/public/img/Tienda/granblue-fantasy-relink-.jpg"
+                        src="/img/Tienda/granblue-fantasy-relink-.jpg"
                         alt="First slide"
                     />
-                
+
                 </div>
 
                 <div className="column">
@@ -177,10 +175,10 @@ function Juegos() {
 
                 <div className="column">
 
-                    <button type="button" className="btn btn-danger">Comprar</button>
+                    <button type="button">Comprar</button>
 
                 </div>
-                
+
             </div>
 
         </section>

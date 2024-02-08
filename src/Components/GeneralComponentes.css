@@ -87,12 +87,12 @@
     font-size: 16px;
     padding: 10px;
     margin-left: 30%;
-justify-content: center;
+    justify-content: center;
 }
 
 .recordarme .check {
     margin-right: 3%;
-} 
+}
 
 .recordarme .omc {
     text-align: right;
@@ -121,4 +121,36 @@ justify-content: center;
 .cform p {
     text-align: center;
     font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Crea tres columnas de igual ancho */
+    grid-column-gap: 30px;
+    /* Agrega espacio entre las columnas */
+}
+
+.column {
+    padding: 10px;
+}
+
+.column .img-1 {
+    width: 60%;
+    /* Establece el ancho de la imagen al 100% del ancho de su contenedor */
+}
+
+.span-2 {
+    font-weight: bold;
+    color: #145A32;
+}
+
+.span-3 {
+    font-weight: bold;
+    color: #1B4F72;
+}
+
+.span-4 {
+    font-weight: bold;
+    color: #B40404;
 }
