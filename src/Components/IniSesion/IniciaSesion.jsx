@@ -16,7 +16,8 @@ export const IniciaSesion = () => {
                     <RiLockPasswordFill />
                 </div>
                 <div className="recordarme">
-                        <input type="checkbox" className="check"/> Recordarme
+                        <input type="checkbox" className="check"/> 
+                        <p>Recordarme</p>
                         <p className="omc">Olvide mi contraseña</p>                    
                 </div>
                 <button type="submit" className="btn">Entrar</button>

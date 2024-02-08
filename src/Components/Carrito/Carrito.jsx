@@ -57,8 +57,7 @@ export const Carrito = () => {
                 </div>
 
                 <div className="recordarme">
-                    <p>Quiero recibir noticias</p>
-                    <input type="checkbox" className="check"/>
+                <input type="checkbox" className="check"/>
                 </div>
 
                 <div className="bartex">

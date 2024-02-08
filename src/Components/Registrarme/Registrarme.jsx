@@ -12,6 +12,10 @@ export const Registrarme = () => {
                     <FaUserLock />
                 </div>
                 <div className="bartex">
+                    <input type="email" className="input" placeHolder="Usuario" required/>
+                    <FaUserLock />
+                </div>
+                <div className="bartex">
                     <input type="text" className="input" placeHolder="Contraseña" required />
                     <RiLockPasswordFill />
                 </div>
