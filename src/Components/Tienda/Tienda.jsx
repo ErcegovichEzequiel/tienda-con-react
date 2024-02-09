@@ -1,9 +1,11 @@
 import "../GeneralComponentes.css";
+import '../Home/Home.css';
 
 function Tienda() {
     return (
+        <><h3 className="desta">JUEGOS MAS ESPERADOS EN FULL STACK GAMES</h3>
         <section className="formulario">
-            <h3>JUEGOS MAS ESPERADOS EN FULL STACK GAMES</h3>
+
             <div className="container">
 
                 <div className="column">
@@ -11,8 +13,7 @@ function Tienda() {
                     <img
                         className="img-1"
                         src="/img/Tienda/blue-protocol.jpg"
-                        alt="First slide"
-                    />
+                        alt="First slide" />
 
                 </div>
 
@@ -36,7 +37,7 @@ function Tienda() {
                 </div>
 
             </div>
-<div className="lineaNegra"></div>
+
             {/*  */}
 
             <div className="container">
@@ -46,8 +47,7 @@ function Tienda() {
                     <img
                         className="img-1"
                         src="/img/Tienda/beyond-good-.jpg"
-                        alt="First slide"
-                    />
+                        alt="First slide" />
 
                 </div>
 
@@ -72,7 +72,7 @@ function Tienda() {
                 </div>
 
             </div>
-<hr />
+            <hr />
             {/*  */}
 
             <div className="container">
@@ -82,8 +82,7 @@ function Tienda() {
                     <img
                         className="img-1"
                         src="/img/Tienda/metroid-prime-4.jpg"
-                        alt="First slide"
-                    />
+                        alt="First slide" />
 
                 </div>
 
@@ -106,7 +105,7 @@ function Tienda() {
                 </div>
 
             </div>
-<hr />
+            <hr />
             {/*  */}
 
             <div className="container">
@@ -116,8 +115,7 @@ function Tienda() {
                     <img
                         className="img-1"
                         src="/img/Tienda/star-citizen-201837182459_1b.jpg"
-                        alt="First slide"
-                    />
+                        alt="First slide" />
 
                 </div>
 
@@ -143,7 +141,7 @@ function Tienda() {
 
             </div>
 
-<hr />
+            <hr />
             {/*  */}
 
             <div className="container">
@@ -153,8 +151,7 @@ function Tienda() {
                     <img
                         className="img-1"
                         src="/img/Tienda/granblue-fantasy-relink-.jpg"
-                        alt="First slide"
-                    />
+                        alt="First slide" />
 
                 </div>
 
@@ -182,7 +179,7 @@ function Tienda() {
 
             </div>
 
-        </section>
+        </section></>
     );
 
 }

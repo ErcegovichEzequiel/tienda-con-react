@@ -4,7 +4,7 @@ import Footer from './Footer/Footer'
 import NavarSup from "./NavarSup/NavarSup.jsx";
 import { Home } from './Home/Home';
 import Derechos from './Footer/Derechos.jsx';
-
+import Tienda from './Tienda/Tienda.jsx';
 import "./GeneralComponentes.css";
 
 
@@ -15,7 +15,7 @@ function App() {
       <Banner />
       <Nav />
       <Home />
-
+      <Tienda />
 
 
 

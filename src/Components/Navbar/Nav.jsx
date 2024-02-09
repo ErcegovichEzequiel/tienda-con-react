@@ -2,9 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Home } from '../Home/Home';
-import Tienda from '../Tienda/Tienda';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 function BasicExample() {
   return (

@@ -183,30 +183,23 @@
 
 /* JUEGOS */
 
-.lineaNegra{
-    background-color: black;
-    width: 100%;
-    height: 3px;
-}
-
-.container {
-    display: grid;
+.formulario.container{
+    display: flex;
     grid-template-columns: 1fr 2fr 1fr;
-    /* Crea tres columnas de igual ancho */
     grid-column-gap: 30px;
-    /* Agrega espacio entre las columnas */
+    
 }
 
-.column {
+.formulario.container.column{
     padding: 10px;
 }
 
-.column .img-1 {
-    width: 60%;
-    /* Establece el ancho de la imagen al 100% del ancho de su contenedor */
+.img-1{
+    width: 90%;
 }
 
-.span-2 {
+
+.span-2{
     font-weight: bold;
     color: #145A32;
 }
