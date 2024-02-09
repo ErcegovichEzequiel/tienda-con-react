@@ -1,13 +1,13 @@
-import DarkVariantExample from "./Carousel";
+import Carrusel from "./Carousel";
 import Merpago from "./Merpago";
-import { JuegosDestacados } from "./Destacados";
-
+import {JuegosDestacados} from "./JuegosDestacados";
+import "../GeneralComponentes.css";
 import './Home.css'
 
 export const Home = () => {
     return (
     <>
-    <DarkVariantExample/>
+    <Carrusel/>
     <Merpago/>
     <JuegosDestacados/> 
     </> 

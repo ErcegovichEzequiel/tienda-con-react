@@ -1,3 +1,7 @@
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 
 function footer() {
@@ -5,10 +9,10 @@ function footer() {
         <footer id="footer">
             <div className="redessociales">
                 <h3>Siguenos</h3>
-                <li><i className="fa-brands fa-square-instagram"></i></li>
-                <li><i className="fa-brands fa-facebook"></i></li>
-                <li><i className="fa-brands fa-twitter"></i></li>
-                <li><i className="fa-brands fa-whatsapp"></i></li>
+                <li><FaInstagramSquare /></li>
+                <li><FaFacebookSquare /></li>
+                <li><FaSquareXTwitter /></li>
+                <li><FaSquareWhatsapp /></li>
             </div>
             <div className="form">
                 <h3>Contactanos</h3>

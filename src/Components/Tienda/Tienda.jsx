@@ -1,6 +1,6 @@
 import "../GeneralComponentes.css";
 
-function Juegos() {
+function Tienda() {
     return (
         <section className="formulario">
             <h3>JUEGOS MAS ESPERADOS EN FULL STACK GAMES</h3>
@@ -36,7 +36,7 @@ function Juegos() {
                 </div>
 
             </div>
-
+<div className="lineaNegra"></div>
             {/*  */}
 
             <div className="container">
@@ -72,7 +72,7 @@ function Juegos() {
                 </div>
 
             </div>
-
+<hr />
             {/*  */}
 
             <div className="container">
@@ -106,7 +106,7 @@ function Juegos() {
                 </div>
 
             </div>
-
+<hr />
             {/*  */}
 
             <div className="container">
@@ -143,6 +143,7 @@ function Juegos() {
 
             </div>
 
+<hr />
             {/*  */}
 
             <div className="container">
@@ -186,6 +187,6 @@ function Juegos() {
 
 }
 
-export default Juegos;
+export default Tienda;
 
 
