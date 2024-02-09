@@ -3,9 +3,6 @@ import Nav from './Navbar/Nav.jsx'
 import Footer from './Footer/Footer'
 import NavarSup from "./NavarSup/NavarSup.jsx";
 import { Home } from './Home/Home';
-// import { IniciaSesion } from './IniSesion/IniciaSesion';
-// import { Registrarme } from "./Registrarme/Registrarme";
-// import { Carrito } from './Carrito/Carrito';
 import Derechos from './Footer/Derechos.jsx';
 
 import "./GeneralComponentes.css";
@@ -19,9 +16,7 @@ function App() {
       <Nav />
       <Home />
 
-      {/* <IniciaSesion />
-      <Registrarme />
-      <Carrito /> */}
+
 
 
       <Footer />
