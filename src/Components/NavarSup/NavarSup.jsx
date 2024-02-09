@@ -15,10 +15,10 @@ function NavarSup() {
                 <Navbar bg="dark" data-bs-theme="dark">
                     <Container>
                         <Nav className="me-auto">
-                            <Link to="/src/Components/IniSesion/IniciaSesion.jsx">Inisio de Sesión</Link>
-                            <Link to="/src/Components/Registrarme">Regístrate</Link>
-                            <Link to="/src/Components/Carrito/Carrito.jsx"><FaCartShopping />
-                            </Link>
+                        <Nav.Link><Link to="/src/Components/IniSesion/IniciaSesion.jsx">Inisio de Sesión</Link></Nav.Link>
+                        <Nav.Link><Link to="/src/Components/Registrarme">Regístrate</Link></Nav.Link>
+                        <Nav.Link><Link to="/src/Components/Carrito/Carrito.jsx"><FaCartShopping />
+                            </Link></Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>
