@@ -1,4 +1,3 @@
-import './Banner.css'
 import React from 'react';
 
 function Banner() {
@@ -11,11 +10,10 @@ function Banner() {
         </div>
         
         <div className="nombrelogo">
-                <h1 className='h1'>FullStack Games</h1>
-                <h4 className='h4'>Entretenimiento Asegurado</h4>
+                <h1 className='nombre'>FullStack Games</h1>
+                <h4 className='frase'>Entretenimiento Asegurado</h4>
         </div>
         </>
-
 )
 }
 

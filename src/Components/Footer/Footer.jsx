@@ -1,4 +1,4 @@
-import './Footer.css'
+
 
 function footer() {
     return (
@@ -24,10 +24,6 @@ function footer() {
 
             </div>
             <div className="contactar">
-
-            </div>
-            <div className="derechos">
-                <p>&copy; <b>2023 FullStack - Videojuegos -</b></p>
             </div>
         </footer>
     );
