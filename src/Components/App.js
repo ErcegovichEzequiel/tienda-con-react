@@ -1,11 +1,11 @@
 import Banner from './Banner/Banner'
-import Nav from './Navbar/Nav.jsx'
+import Navbarr from './Navbarr/Navbarr.jsx'
 import Footer from './Footer/Footer'
 import NavarSup from "./NavarSup/NavarSup.jsx";
 import { Home } from './Home/Home';
 import Derechos from './Footer/Derechos.jsx';
-import Tienda from './Tienda/Tienda.jsx';
 import "./GeneralComponentes.css";
+
 
 
 function App() {
@@ -13,9 +13,8 @@ function App() {
     <div className="App">
       <NavarSup />
       <Banner />
-      <Nav />
+      <Navbarr/>
       <Home />
-      <Tienda />
 
 
 
