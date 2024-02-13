@@ -216,6 +216,7 @@ body {
     
 
     #footer {
+
         width: 100%;
         background-color: rgb(218, 218, 218);
         padding: 1px 1px;
@@ -226,24 +227,28 @@ body {
     }
     
     .redessociales {
-        margin-top: 10px;
+        grid-column: 1;
+        margin-top: 5px;
         color: rgb(255, 0, 0);
         text-align: center;
         list-style: none;
-        filter: drop-shadow(0px 0px 30px rgb(0, 0, 0));
+        
+        margin-bottom: 10px;
     }
     
     .redessociales.h3 {
+
         color: rgb(255, 140, 0);
     }
     
-    .redessociales.i {
-        margin: 10px;
-        font-size: 30px;
-        /* filter: drop-shadow( 0px 0px 2px rgb(0, 0, 0)); */
+    .redesicon {
+
+        font-size: 50px;
+        filter: drop-shadow( 0px 0px 10px rgb(0, 0, 0));
     }
     
     .form {
+        grid-column: 2;
         text-align: center;
         padding: 5px;
         color: rgb(255, 140, 0);
@@ -260,6 +265,7 @@ body {
         border: 2px solid #ff0000;
         background: transparent;
         box-shadow: 5px 2px 10px black;
+        margin-top: 50px;
     }
     
     .contacto .formulario-txt {
@@ -294,13 +300,34 @@ body {
     
     .derechos {
         background-color: rgb(0, 0, 0);
-        padding: 1px;
+        padding: 15px;
         text-align: center;
         color: rgb(255, 140, 0);
         width: 100%;
     }
     
     .derechos.p {
-        margin-top: 15px;
         font-size: 16px;
+    }
+
+    .map-container {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+        padding: 5px;
+        color: rgb(175, 7, 7);
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 400px;
+        width: 100%;
+        }
+
+    .mapa{
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
     }

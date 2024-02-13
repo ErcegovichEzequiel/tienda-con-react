@@ -15,9 +15,6 @@ function App() {
       <Banner />
       <Navbarr/>
       <Home />
-
-
-
       <Footer />
       <Derechos />
     </div>

@@ -2,6 +2,8 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import Maps from "./Maps";
+
 
 
 function footer() {
@@ -9,10 +11,12 @@ function footer() {
         <footer id="footer">
             <div className="redessociales">
                 <h3>Siguenos</h3>
-                <li><FaInstagramSquare /></li>
-                <li><FaFacebookSquare /></li>
-                <li><FaSquareXTwitter /></li>
-                <li><FaSquareWhatsapp /></li>
+                <div className="redesicon">
+                    <li><FaInstagramSquare /></li>
+                    <li><FaFacebookSquare /></li>
+                    <li><FaSquareXTwitter /></li>
+                    <li><FaSquareWhatsapp /></li>
+                </div>
             </div>
             <div className="form">
                 <h3>Contactanos</h3>
@@ -29,9 +33,19 @@ function footer() {
             </div>
             <div className="contactar">
             </div>
+
+            <div className="map-container">
+                <h3>Ubicación</h3>
+
+                <div className="mapa">
+                    <Maps/>
+                </div>
+
+            </div>
+
         </footer>
     );
-}
+};
 
 export default footer;
 
