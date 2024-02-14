@@ -12,7 +12,7 @@ export const IniciaSesion = () =>{
             alert("¡Te extrañamos! ¡Tenemos cosas nuevas para vos!")
             window.location.href = "/"
         } else {
-            alert("Por favor, complete los campos de usuario y contraseña")
+            alert("Por favor, complete los campos de usuario y contraseña.")
         }
     }
     const handleUserInputChange = (event) =>{
