@@ -2,11 +2,11 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import Maps from "./Maps";
+// import MapsAPIgoogle from "./MapsAPIgoogle";
 
 
 
-function footer() {
+function Footer() {
     return (
         <footer id="footer">
             <div className="redessociales">
@@ -37,9 +37,9 @@ function footer() {
             <div className="map-container">
                 <h3>Ubicación</h3>
 
-                <div className="mapa">
-                    <Maps/>
-                </div>
+                {/* <div className="mapa">
+                    <MapsAPIgoogle/>
+                </div> */}
 
             </div>
 
@@ -47,6 +47,4 @@ function footer() {
     );
 };
 
-export default footer;
-
-
+export default Footer;

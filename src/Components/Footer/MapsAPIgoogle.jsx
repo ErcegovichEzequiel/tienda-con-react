@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const MapComponent = () => {
+function MapsAPIgoogle() {
   const [map, setMap] = useState(null);
+  const mapContainerRef = useRef(null);
 
   useEffect(() => {
     // Carga la API de Google Maps con tu clave API
@@ -18,10 +19,13 @@ const MapComponent = () => {
 
     // Inicializa el mapa una vez que la API está cargada
     const initMap = () => {
-      const mapInstance = new window.google.maps.Map(document.getElementById('mapa'), {
+      if (!mapContainerRef.current) return;
+
+      const mapInstance = new window.google.maps.Map(mapContainerRef.current, {
         center: { lat: 40.7128, lng: -74.006 },
         zoom: 12,
       });
+
       setMap(mapInstance);
     };
 
@@ -34,11 +38,9 @@ const MapComponent = () => {
         map.setMap(null);
       }
     };
-  },);
+  }, []);
 
-  return <></>;
-};
+  return <div id="mapa" ref={mapContainerRef} style={{ height: '400px' }} />;
+}
 
-export default MapComponent;
-
-
+export default MapsAPIgoogle;
