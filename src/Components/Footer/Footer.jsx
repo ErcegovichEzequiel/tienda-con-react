@@ -2,7 +2,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-// import MapsAPIgoogle from "./MapsAPIgoogle";
+import MapsAPIgoogle from "./MapsAPIgoogle";
 
 
 
@@ -37,9 +37,9 @@ function Footer() {
             <div className="map-container">
                 <h3>Ubicación</h3>
 
-                {/* <div className="mapa">
+                <div className="mapa">
                     <MapsAPIgoogle/>
-                </div> */}
+                </div>
 
             </div>
 
