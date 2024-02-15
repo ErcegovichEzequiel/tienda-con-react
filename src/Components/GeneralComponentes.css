@@ -1,19 +1,30 @@
-/* Establecer el tamaño de fuente del cuerpo en 10px como tamaño base */
 body {
     font-size: 15px;
 }
 
 .banner {
-    width: 100%;
-    height: auto;
-    background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    height: auto;    ;
     align-items: center;
-    padding: 1%;
+    padding: 20px;
+    /* PATRON */
+
+    --s: 200px;
+    /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+
 }
 
-.banner .logo{
+/* .banner .logo {
     height: auto;
     margin: 0;
     padding: 0;
@@ -21,332 +32,353 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.banner .logo .isologo{
-    /* Isologo */
+/* .banner .logo .isologo {
+
     width: auto;
     height: auto;
     margin-left: 20px;
-    filter: drop-shadow(0px 0px 30px rgb(241, 241, 241));
+
+} */
+
+.banner .nombrelogo {
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.268);
+    box-shadow: 0 0 20px rgb(255, 140, 0);
+    margin: 0%;
+    border: solid 2px black;
+    text-align: center;
+    /*  flex-direction: column; */
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.banner .nombrelogo{
-    text-align: center;
-    color: cadetblue;
+.banner .nombrelogo .nombre {
+    font-size: 80px;
+    text-shadow: 0px 0px 15px rgba(0, 247, 255, 0.604);
+    color: white;
     text-decoration: none;
     cursor: pointer;
-    text-shadow: 0px 0px 30px rgb(241, 241, 241);
-    font-size: 4rem;
-    /* Aumentar el tamaño de fuente a 4rem */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.banner .nombrelogo .frase{
     text-align: center;
-    color: rgb(255, 140, 0);
-    font-size: 2rem;
-    /* Aumentar el tamaño de fuente a 2rem */
-    width: 100%;
-    height: 100px;
-    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
-/* Establecer el tamaño de fuente base a 1rem para viewports más pequeños */
+.banner .nombrelogo .frase {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  
+}
+
 @media (max-width: 800px) {
-    body{
+    body {
         font-size: 1rem;
     }
 
-    .banner .nombrelogo{
+    .banner .nombrelogo {
         font-size: 2.5rem;
-        /* Disminuir el tamaño de fuente para viewports más pequeños */
     }
 
-    .banner .nombrelogo .frase{
+    .banner .nombrelogo .frase {
         font-size: 1.0rem;
-        /* Disminuir el tamaño de fuente para viewports más pequeños */
     }
 }
 
-/* Ajustar el diseño en función del tamaño del viewport */
 @media (max-width: 480px) {
-    .banner{
+    .banner {
         flex-direction: column;
-        align-items: center;}
-        
+        align-items: center;
     }
 
-    .banner .logo{
-        margin-bottom: 1rem;
-    }
+}
 
-    .banner .nombrelogo{
-        margin-top: 1rem;
-    }
+.banner .logo {
+    margin-bottom: 1rem;
+}
 
-    .formulario{
-        display: flex;
+.banner .nombrelogo {
+    margin-top: 1rem;
+}
+
+.formulario {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(218, 218, 218);
     border-radius: 5px;
     width: 90%;
     height: auto;
     margin: 5%;
-    }
+}
 
-    .cform{
-        margin: 3%;
+.cform {
+    margin: 3%;
     padding: 3%;
     width: 50%;
     height: auto;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(174, 174, 174);
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
-    }
-
-    .cform h3{
-        font-size: 36px;
-        text-align: center;
-        margin-top: 15px;
-        color: cadetblue;
-    }
-
-    .cform .bartex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        margin: 3%;
-        color: rgb(255, 140, 0);
-    }
-    
-    .bartex input {
-        width: 40%;
-        height: 30px;
-        background: transparent;
-        border: none;
-        outline: none;
-        border: 2px solid black;
-        box-shadow: 2px 2px 10px black;
-        font-size: 15px;
-        color: rgb(255, 140, 0);
-        margin-right: 2%;
-    }
-    
-    .bartex .bartexOpcions {
-        width: 40%;
-        height: 30px;
-        background: transparent;
-        border: none;
-        outline: none;
-        border: 2px solid black;
-        box-shadow: 2px 2px 10px black;
-        font-size: 15px;
-        color: rgb(255, 140, 0);
-        margin-right: 2%;
-    }
-    
-    .bartexOpcions option:not(:checked) {
-        color: rgb(255, 140, 0);
-    }
-    
-    .bartexOpcions option:first-child {
-        color: #f00;
-    }
-    
-    .bartexOpcions option:first-child:checked {
-        color: #f00;
-    }
-    
-    .disabled-option {
-        color: rgb(255, 140, 0);
-    }
-    
-    .bartex input::placeholder {
-        color: rgb(255, 140, 0);
-        padding: 10px;
-    }
-    
-    .recordarme {
-        width: 50%;
-        display: flex;
-        font-size: 16px;
-        padding: 10px;
-        margin-left: 30%;
-        justify-content: center;
-    }
-    
-    .recordarme .check {
-        margin-right: 3%;
-    }
-    
-    .recordarme .omc {
-        text-align: right;
-        color: blue;
-        text-decoration: underline;
-        font-size: 16px;
-        margin-left: 3%;
-        margin-right: 3%
-    }
-    
-    .cform .btn {
-        background-color: rgb(255, 140, 0);
-        width: 90px;
-        height: 40px;
-        margin-top: 30px;
-        border: none;
-        outline: none;
-        border-radius: 40px;
-        box-shadow: 1px 1px 5px black;
-        cursor: pointer;
-        text-align: center;
-        margin-left: 40%;
-        margin-bottom: 25px;
-    }
-    
-    .cform p {
-        text-align: center;
-        font-size: 16px;
-    }
-    
-
-    #footer {
-
-        width: 100%;
-        background-color: rgb(218, 218, 218);
-        padding: 1px 1px;
-        font-size: 16px;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .redessociales {
-        grid-column: 1;
-        margin-top: 5px;
-        color: rgb(255, 140, 0);
-        text-align: center;
-        list-style: none;
-        
-        margin-bottom: 10px;
-    }
-    
-    .redessociales.h3 {
-
-        color: rgb(255, 140, 0);
-    }
-    
-    .redesicon {
-        color: cadetblue;
-        font-size: 40px;
-        filter: drop-shadow( 0px 0px 5px rgb(255, 255, 255));
-       
-    }
-    
-    .form {
-        grid-column: 2;
-        text-align: center;
-        padding: 5px;
-        color: rgb(255, 140, 0);
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    
-    .contacto .formulario-caja {
-        width: 250px;
-        padding: 10px;
-        font-size: 15px;
-        color: rgb(255, 140, 0);
-        border-radius: 6px;
-        border: 2px solid cadetblue;
-        background: transparent;
-        box-shadow: 5px 2px 10px black;
-        margin-top: 50px;
-    }
-    
-    .contacto .formulario-txt {
-        width: 250px;
-        max-width: 300px;
-        height: 100px;
-        max-height: 120px;
-        padding: 10px;
-        font-size: 15px;
-        color: rgb(255, 140, 0);
-        border-radius: 6px;
-        border: 2px solid cadetblue;
-        background: transparent;
-        box-shadow: 5px 2px 10px black;
-    }
-    
-    .form .button {
-        width: 25%;
-        height: 30px;
-        margin: 20px;
-        font-size: 16px;
-        background-color: rgb(255, 140, 0);
-        margin-left: 40px;
-        outline: none;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-    
-    .contactar {
-        margin-top: 25px;
-    }
-    
-    .derechos {
-        background-color: rgb(0, 0, 0);
-        padding: 15px;
-        text-align: center;
-        color: rgb(255, 140, 0);
-        width: 100%;
-    }
-    
-    .derechos.p {
-        font-size: 16px;
-    }
-
-    .map-container {
-        grid-column: 3;
-        grid-row: 1;
-        text-align: center;
-        padding: 5px;
-        color: rgb(255, 140, 0);
-        margin-top: 5px;
-        margin-bottom: 10px;
-        height: 400px;
-        width: 100%;
-        }
-
-    .mapa{
-        height: 400px;
-        width: 100%;
-        text-align: center;
-        padding: 5px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    /* Foto de EN CONSTRUCCION */
-
-.jgeneral .EnConstruccionImg{
-    box-shadow: 3px 3px 5px;
-    width:  80%;
 }
 
-.cardContainer{
+.cform h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(255, 140, 0);
+}
+
+.cform .bartex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 3%;
+    color: rgb(255, 140, 0);
+}
+
+.cform .bartex .iconinpu {
+    margin-left: 10px;
+}
+
+.bartex input {
+    width: 250px;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+}
+
+.bartex .bartexOpcions {
+    width: 250px;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+}
+
+.bartexOpcions option:not(:checked) {
+    color: rgb(0, 0, 0);
+}
+
+.bartexOpcions option:first-child {
+    color: #f00;
+}
+
+.bartexOpcions option:first-child:checked {
+    color: #f00;
+}
+
+.disabled-option {
+    color: rgb(0, 0, 0);
+}
+
+.bartex input::placeholder {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.recordarme {
+    width: 50%;
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 30%;
+    justify-content: center;
+}
+
+.recordarme .check {
+    margin-right: 3%;
+}
+
+.recordarme .omc {
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-left: 3%;
+    margin-right: 3%
+}
+
+.cform .btn {
+    background-color: C;
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+.cform p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    /* background-color: rgb(174, 174, 174); */
+    padding: 1px 1px;
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* PATRON */
+    --s: 200px;
+    /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+}
+
+.redessociales {
+    grid-column: 1;
+    margin-top: 5px;
+    color: rgb(255, 140, 0);
+    text-align: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.redessociales.h3 {
+
+    color: rgb(255, 140, 0);
+}
+
+.redesicon {
+    color: cadetblue;
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+
+}
+
+.form {
+    grid-column: 2;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 140, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#footer .btn {
+    background-color: rgb(255, 140, 0);
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+
+#footer .mapa {
+    margin-bottom: 2%;
+    padding: 0%;
+    display: inline-block;
+}
+
+#footer .mapa .mapContainer {
+    border-radius: 6px;
+    box-shadow: 5px 2px 10px black;
+    margin-right: 20px;
+}
+
+.contacto .formulario-caja {
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.contacto .formulario-txt {
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    max-height: 120px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+}
+
+.contactar {
+    margin-top: 25px;
+}
+
+.derechos {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    color: rgb(255, 140, 0);
+    width: 100%;
+}
+
+.derechos.p {
+    font-size: 16px;
+}
+
+.map-container {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 140, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.mapa {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Foto de EN CONSTRUCCION */
+
+.jgeneral .EnConstruccionImg {
+    box-shadow: 3px 3px 5px;
+    width: 80%;
+}
+
+.cardContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
 }
 
-.card1{
+.card1 {
 
     grid-column: 1;
     margin-top: 15px;
@@ -354,12 +386,13 @@ body {
     list-style: none;
     margin-bottom: 15px;
     padding: 20px;
-    border:solid;
+    border: solid;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
 
 }
-.card2{
+
+.card2 {
 
     grid-column: 2;
     margin-top: 15px;
@@ -367,13 +400,13 @@ body {
     list-style: none;
     margin-bottom: 15px;
     padding: 20px;
-    border:solid;
+    border: solid;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
 
 }
 
-.card3{
+.card3 {
 
     grid-column: 3;
     margin-top: 15px;
@@ -381,13 +414,13 @@ body {
     list-style: none;
     margin-bottom: 15px;
     padding: 20px;
-    border:solid;
+    border: solid;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
 
 }
 
-.card4{
+.card4 {
 
     grid-column: 4;
     margin-top: 15px;
@@ -395,8 +428,29 @@ body {
     list-style: none;
     margin-bottom: 15px;
     padding: 20px;
-    border:solid;
+    border: solid;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
 
+}
+
+/* BANNER */
+
+.navSup {
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+}
+
+.navSup .navListaGeneral .navLista {
+    text-align: right;
+    text-decoration: none;
+    outline: none;
+    color: rgb(218, 218, 218);
+    margin-right: 15px;
+}
+
+.navSup .navListaGeneral .navLista:hover {
+    color: cadetblue;
 }

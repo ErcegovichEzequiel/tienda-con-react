@@ -21,14 +21,12 @@ function Footer() {
             <div className="form">
                 <h3>Contactanos</h3>
                 <div className="contacto">
-                    <label for="ingreso-de-email"></label>
-                    <input type="email" class="formulario-caja" id="ingreso-de-email" placeholder="E-mail"></input>
+                    <input type="email" className="formulario-caja" placeholder="E-mail"></input>
                 </div>
                 <div className="contacto">
-                    <label for="ingreso-de-texto"></label><br></br>
-                    <textarea className="formulario-txt" maxlength="500" id="ingreso-de-texto" placeholder="Texto (Max 500)"></textarea>
+                    <textarea className="formulario-txt" maxlength="500" placeholder="Texto (Max 500)"></textarea>
                 </div>
-                <input className="button" type="submit" value="Enviar"></input>
+                <button type="submit" className="btn">Enviar</button>
 
             </div>
             <div className="contactar">
@@ -38,7 +36,7 @@ function Footer() {
                 <h3>Ubicación</h3>
 
                 <div className="mapa">
-                    <MapsAPIgoogle/>
+                    <MapsAPIgoogle />
                 </div>
 
             </div>

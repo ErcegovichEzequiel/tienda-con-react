@@ -8,28 +8,27 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 
+
 function Banner() {
     return (
         <>
-            <Navbar bg="dark" data-bs-theme="dark">
-                <Container>
-                    <Nav className="me-auto">
-                        <Nav.Link><Link to="/src/Components/IniSesion/IniciaSesion.jsx">Inisio de Sesión</Link></Nav.Link>
-                        <Nav.Link><Link to="/src/Components/Registrarme">Regístrate</Link></Nav.Link>
-                        <Nav.Link><Link to="/src/Components/Carrito/Carrito.jsx"><FaCartShopping /></Link></Nav.Link>
+            <Navbar className='navSup'>
+                    <Nav className="navListaGeneral">
+                        <Link className='navLista' to="/src/Components/IniSesion/IniciaSesion.jsx">Inisio de Sesión</Link>
+                        <Link className='navLista' to="/src/Components/Registrarme">Regístrate</Link>
+                        <Link className='navLista' to="/src/Components/Carrito/Carrito.jsx"><FaCartShopping /></Link>
                     </Nav>
-                </Container>
             </Navbar>
 
             <section className='banner'>
-                <div className="logo">
+                {/* <div className="logo">
                     <img className="isologo"
                         src="/img/logo.png"
                         alt="Isologo" />
-                </div>
+                </div> */}
 
                 <div className="nombrelogo">
-                    <h1 className='nombre'>Pimpinelas Games</h1>
+                    <h1 className='nombre'>PIMPINELAS GAME</h1>
                     <h4 className='frase'>Entretenimiento Asegurado</h4>
                 </div>
             </section>

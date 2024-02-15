@@ -27,11 +27,12 @@ export const IniciaSesion = () =>{
                     <h3>Inicio de sesión</h3>
                     <div className="bartex">
                         <input type="text" placeHolder="Usuario" required value={userInput} onChange={handleUserInputChange} />
-                        <FaUserLock />
+                        <p className="iconinpu"><FaUserLock /></p>
                     </div>
                     <div className="bartex">
                         <input type="password" placeHolder="Contraseña" required value={passwordInput} onChange={handlePasswordInputChange} />
-                        <RiLockPasswordFill />
+                        <p className="iconinpu"><RiLockPasswordFill /></p>
+                        
                     </div>
                     <div className="recordarme">
                         <input type="checkbox" className="check" />
