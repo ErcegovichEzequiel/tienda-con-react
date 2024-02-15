@@ -1,0 +1,155 @@
+#footer {
+    width: 100%;
+    padding: 1px 1px;
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* PATRON */
+    --s: 200px;
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+}
+
+/* Redes Sociales */
+.redessociales {
+    grid-column: 1;
+    margin-top: 5px;
+    color: rgb(255, 140, 0);
+    text-align: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.redesicon {
+    color: cadetblue;
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+/* Formulario de contacto */
+.form {
+    grid-column: 2;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 140, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contacto .formulario-caja {
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.contacto .formulario-txt {
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    max-height: 120px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid cadetblue;
+    background: transparent;
+    box-shadow: 5px 2px 10px black;
+}
+
+.contactar {
+    margin-top: 25px;
+}
+
+/* Mapa */
+.map-container {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 140, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.mapa {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* DERECHOS */
+
+.derechos {
+    background-color: black;
+    color: rgb(255, 140, 0);
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.derechos .derechosTexto {
+    margin: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+/* Consultas de medios para 500px */
+@media (max-width: 500px) {
+    #footer {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .redessociales {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .map-container {
+        grid-column: 1;
+        grid-row: 3;
+        width:  80%;
+        margin-bottom: 3%;
+    }
+    .derechos {
+
+width: 100%;
+    }
+}
+
+
+
+/* Consultas de medios para 800px */
+@media (max-width: 800px) {
+
+    .formulario-caja,
+    .formulario-txt {
+        width: 90%;
+    }
+
+    .map-container,
+    .mapa {
+        height: 300px;
+    }
+}

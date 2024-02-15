@@ -1,0 +1,84 @@
+/* Estilos originales */
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* PATRON */
+    --s: 200px;
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+}
+
+.banner .nombrelogo {
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.268);
+    box-shadow: 0 0 20px rgb(255, 140, 0);
+    margin: 0 auto 10px auto;
+    border: solid 2px black;
+    text-align: center;
+    padding: 10px;
+}
+
+.banner .nombrelogo .nombre {
+    font-size: 80px;
+    text-shadow: 0px 0px 15px rgba(0, 247, 255, 0.604);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner .nombrelogo .frase {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+/* Navbar superior */
+.navSup {
+    background-color: rgb(22, 22, 22);
+    justify-content: right;
+    text-align: right;
+}
+
+.navSup .navListaGeneral .navLista {
+    color: rgb(218, 218, 218);
+    margin-right: 15px;
+}
+
+/* Navbar inferior */
+.navInf {
+    background-color: rgb(22, 22, 22);
+    justify-content: left;
+    text-align: left;
+}
+
+.navInf .listaGeneralInferior .listaInferior {
+    color: rgb(218, 218, 218);
+    margin-left: 15px;
+}
+
+/* Consultas de medios para 500px */
+@media (max-width: 500px) {
+    .banner .nombrelogo {
+        width: 90%;
+    }
+}
+
+/* Consultas de medios para 800px */
+@media (max-width: 800px) {
+    .banner .nombrelogo .nombre {
+        font-size: 60px;
+    }
+
+    .banner .nombrelogo .frase {
+        font-size: 20px;
+    }
+}
