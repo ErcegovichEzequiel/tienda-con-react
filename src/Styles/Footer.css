@@ -72,10 +72,12 @@
     box-shadow: 5px 2px 10px black;
     margin-top: 50px;
     margin-bottom: 40px;
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.268);
 }
 
 .contacto .formulario-txt {
+    color: #ffffff;
     width: 250px;
     max-width: 300px;
     height: 100px;

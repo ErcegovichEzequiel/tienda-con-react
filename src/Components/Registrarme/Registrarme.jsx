@@ -9,19 +9,19 @@ export const Registrarme = () => {
                 <h3 >Registrate</h3>
                 <div className="bartex">
                     <input className="bartexInput" type="email" placeHolder="Correo Electrónico" required/>
-                    <FaUserLock />
+                    <p className="iconinpu"><FaUserLock /></p>
                 </div>
                 <div className="bartex">
                     <input className="bartexInput" type="email" placeHolder="Usuario" required/>
-                    <FaUserLock />
+                    <p className="iconinpu"><FaUserLock /></p>
                 </div>
                 <div className="bartex">
                     <input className="bartexInput" type="text" placeHolder="Contraseña" required />
-                    <RiLockPasswordFill />
+                    <p className="iconinpu"><RiLockPasswordFill /></p>
                 </div>
                 <div className="bartex">
                     <input className="bartexInput" type="text"  placeHolder="Confirmar contraseña" required />
-                    <RiLockPasswordFill />
+                    <p className="iconinpu"><RiLockPasswordFill /></p>
                 </div>
                 <br />
                 <p>¿Ya tienes cuenta? Inicia Sesión</p>

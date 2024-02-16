@@ -6,7 +6,7 @@ export const Carrito = () => {
             <form className="cform">
                 <h3>Ingresá tus datos</h3>
                 <div className="bartex">
-                    <input type="email" placeHolder="Correo Electrónico" required />
+                    <input className="bartexInput" type="email" placeHolder="Correo Electrónico" required />
                 </div>
                 <div className="bartex"> {/* provincias  */}
                     <select className="bartexOpcions">
@@ -47,13 +47,13 @@ export const Carrito = () => {
                     </select>
                 </div>
                 <div className="bartex"> {/* dire  */}
-                    <input type="text" placeholder="Dirección Ej: Av. Colón" />
+                    <input className="bartexInput" type="text" placeholder="Dirección Ej: Av. Colón" />
                 </div>
                 <div className="bartex"> {/* piso  */}
-                    <input type="text" placeholder="Piso y Departamento Ej: 1ro C" />
+                    <input className="bartexInput" type="text" placeholder="Piso y Departamento Ej: 1ro C" />
                 </div>
                 <div className="bartex"> {/* CP  */}
-                    <input type="text" placeholder="Código Postal Ej: 1856" />
+                    <input className="bartexInput" type="text" placeholder="Código Postal Ej: 1856" />
                 </div>
 
                 <div className="recordarme">
