@@ -1,4 +1,4 @@
-import "../GeneralComponentes.css"
+
 import { FaUserLock } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 
@@ -8,19 +8,19 @@ export const Registrarme = () => {
             <form className="cform">
                 <h3 >Registrate</h3>
                 <div className="bartex">
-                    <input type="email" className="input" placeHolder="Correo Electrónico" required/>
+                    <input className="bartexInput" type="email" placeHolder="Correo Electrónico" required/>
                     <FaUserLock />
                 </div>
                 <div className="bartex">
-                    <input type="email" className="input" placeHolder="Usuario" required/>
+                    <input className="bartexInput" type="email" placeHolder="Usuario" required/>
                     <FaUserLock />
                 </div>
                 <div className="bartex">
-                    <input type="text" className="input" placeHolder="Contraseña" required />
+                    <input className="bartexInput" type="text" placeHolder="Contraseña" required />
                     <RiLockPasswordFill />
                 </div>
                 <div className="bartex">
-                    <input type="text" className="input" placeHolder="Confirmar contraseña" required />
+                    <input className="bartexInput" type="text"  placeHolder="Confirmar contraseña" required />
                     <RiLockPasswordFill />
                 </div>
                 <br />

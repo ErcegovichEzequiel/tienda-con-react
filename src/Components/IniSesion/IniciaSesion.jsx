@@ -1,4 +1,4 @@
-import "../GeneralComponentes.css"
+
 import { FaUserLock } from "react-icons/fa"
 import { RiLockPasswordFill } from "react-icons/ri"
 import { useState } from "react"
@@ -26,11 +26,11 @@ export const IniciaSesion = () =>{
                 <form className="cform">
                     <h3>Inicio de sesión</h3>
                     <div className="bartex">
-                        <input type="text" placeHolder="Usuario" required value={userInput} onChange={handleUserInputChange} />
+                        <input className="bartexInput" type="text" placeHolder="Usuario" required value={userInput} onChange={handleUserInputChange} />
                         <p className="iconinpu"><FaUserLock /></p>
                     </div>
                     <div className="bartex">
-                        <input type="password" placeHolder="Contraseña" required value={passwordInput} onChange={handlePasswordInputChange} />
+                        <input className="bartexInput" type="password" placeHolder="Contraseña" required value={passwordInput} onChange={handlePasswordInputChange} />
                         <p className="iconinpu"><RiLockPasswordFill /></p>
                         
                     </div>
@@ -39,7 +39,7 @@ export const IniciaSesion = () =>{
                         <p>Recordarme</p>
                         <p className="omc">Olvide mi contraseña</p>
                     </div>
-                    <button type="submit" className="btn" onClick={handleButtonClick}>Entrar</button>
+                    <button type="submit" className="btn" onClick={handleButtonClick}>Ingresar</button>
                     <br />
                     <p>No tiene cuenta? <a href="registro.html">Registrate</a></p>
                 </form>

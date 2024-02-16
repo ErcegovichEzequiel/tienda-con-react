@@ -1,4 +1,4 @@
-import "../GeneralComponentes.css";
+
 import '../Home/Home.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -10,7 +10,7 @@ function BasicExample() {
     return (
         <>
 
-            <h3 className="desta">JUEGOS MAS ESPERADOS EN PIMPINELAS GAME</h3>
+            <h3 className="desta">¡JUEGOS MAS ESPERADOS!</h3>
 
             <div className="cardContainer">
 

@@ -1,4 +1,4 @@
-import "../GeneralComponentes.css";
+
 
 export const Carrito = () => {
     return (

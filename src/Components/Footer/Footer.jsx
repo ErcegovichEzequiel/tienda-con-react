@@ -21,7 +21,7 @@ function Footer() {
             <div className="form">
                 <h3>Contactanos</h3>
                 <div className="contacto">
-                    <input type="email" className="formulario-caja" placeholder="E-mail"></input>
+                    <input type="email" className="formulario-caja" placeHolder="E-mail"></input>
                 </div>
                 <div className="contacto">
                     <textarea className="formulario-txt" maxlength="500" placeholder="Texto (Max 500)"></textarea>
