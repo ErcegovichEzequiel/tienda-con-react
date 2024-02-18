@@ -8,7 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(255, 255, 255); */
     border-radius: 5px;
     width: 90%;
     height: auto;
@@ -32,11 +31,10 @@ body {
     height: auto;
     background: transparent;
     border-radius: 5px;
-    /* box-shadow: 3px 3px 5px; */
     border: solid 2px black;
     box-shadow: 0 0 15px rgb(255, 140, 0);
     color: white;
-    
+
 }
 
 .cform h3 {
@@ -100,28 +98,58 @@ body {
     color: rgb(0, 0, 0);
 }
 
+
+/* PARTES DE INICIAR SESION Y REGISTRARME */
+
 .recordarme {
-    width: 50%;
     display: flex;
-    font-size: 16px;
-    padding: 10px;
-    margin-left: 30%;
+    flex-direction: row;
+    align-items: baseline;
     justify-content: center;
-    color: white;
 }
 
 .recordarme .check {
     margin-right: 3%;
 }
 
-.recordarme .omc {
-    text-align: right;
-    color: blue;
-    text-decoration: underline;
-    font-size: 16px;
-    margin-left: 3%;
-    margin-right: 3%
+.recordarme .recordarmeP {
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
 }
+.registrameInicioSesion{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    align-content: space-around;
+
+}
+.registrameInicioSesion .linkRecordarme{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.registrameInicioSesion .linkRecordarme:hover{
+    color: cadetblue;
+    font-size: 18px;
+}
+.omc{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+}
+.omc:hover{
+    color: cadetblue;
+    font-size: 18px;
+}
+
+
+
+
 
 .cform .btn {
     background-color: rgb(109, 180, 182);
