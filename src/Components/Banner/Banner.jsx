@@ -33,9 +33,9 @@ function Banner() {
                 <Navbar.Collapse className="listaInferior">
                     <Nav className="listaGeneralInferior">
                         <Nav.Link> <Link className="listaInferior" to="/">Inicio</Link></Nav.Link>
-                        <Nav.Link> <Link className="listaInferior" to="/">Contactanos</Link></Nav.Link>
                         <Nav.Link><Link className="listaInferior" to="/src/Components/Tienda/Tienda.jsx">Juegos</Link></Nav.Link>
                         <Nav.Link><Link className="listaInferior" to="/src/Components/Banner/EnConstruccion.jsx">Consolas</Link></Nav.Link>
+                        <Nav.Link> <Link className="listaInferior" to="/src/Components/Footer/Footer.jsx">Contactanos</Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

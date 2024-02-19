@@ -75,19 +75,30 @@
 }
 
 /* Consultas de medios para 500px */
-@media (max-width: 500px) {
-    .banner .nombrelogo {
-        width: 90%;
-    }
-}
+
 
 /* Consultas de medios para 800px */
 @media (max-width: 800px) {
+
+    .banner{
+        width: 100%;
+    }
+    
     .banner .nombrelogo .nombre {
         font-size: 60px;
     }
 
     .banner .nombrelogo .frase {
         font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .banner{
+        width: 100%;
+    }
+   
+   
+    .banner .nombrelogo {
+        width: 90%;
     }
 }

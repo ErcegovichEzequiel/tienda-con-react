@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     width: 90%;
     height: auto;
-    /* background-color: rgb(218, 218, 218); */
+    /* background-color: rgb(245, 23, 23); */
     border-radius: 5px;
     margin: 5%;
     margin-top: 3%;
@@ -38,10 +38,10 @@
 
 .jd {
     width: 580px;
-    height: 570px;
+    height: 600px;
     display: block;
     margin: 30px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 30px;
     background:transparent;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
@@ -106,10 +106,14 @@
     text-shadow: 0px 0px 15px rgba(0, 247, 255, 0.604);
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (max-width: 501px) {
     .jd {
-        width: 45%;
-        display: inline-block;
+        width: 100%;
+        
+    }
+    .jgeneral{
+        width: 65%;
+        display: flex;
     }
 }
 

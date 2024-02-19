@@ -1,6 +1,7 @@
 body {
     font-size: 15px;
     background-color: #7e7f80;
+
 }
 
 .formulario {
@@ -183,6 +184,7 @@ font-family: 'Courier New', Courier, monospace;
 }
 
 
+   
 
 /* Consultas de medios para 500px */
 @media (max-width: 500px) {

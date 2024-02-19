@@ -2,7 +2,7 @@
 import '../Home/Home.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import '../../Styles/GeneralComponentes.css';
 
 
 
@@ -12,9 +12,9 @@ function BasicExample() {
 
             <h3 className="desta">¡JUEGOS MAS ESPERADOS!</h3>
 
-            <div className="cardContainer">
+            <div className="jgeneral">
 
-                <div className="card1">
+                <div className="jd">
                     <Card.Img variant="top" src="/img/Tienda/fifa24.jpg" />
                     <Card.Body>
                         <Card.Title>FIFA 24</Card.Title>
@@ -23,34 +23,25 @@ function BasicExample() {
                             Español latino
                             Multijugador local
                             Juego Original y Completo
-                            <br />
-                            <br />
-                            <br />
 
                         </Card.Text>
                         <Button variant="primary">Comprar</Button>
                     </Card.Body>
                 </div>
 
-                <div className="card2">
+                <div className="jd">
                     <Card.Img variant="top" src="/img/Tienda/gtaV.jpg" />
                     <Card.Body>
                         <Card.Title>GRAND THEFT AUTO</Card.Title>
                         <Card.Text>
                             Esta entrega de la saga combina historia y jugabilidad de una forma totalmente nueva y permite a los jugadores asumir un rol dentro del juego como estafador callejero, ex convicto o maníaco para construir su propio imperio criminal en una ciudad en decadencia.
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
 
                         </Card.Text>
                         <Button variant="primary">Comprar</Button>
                     </Card.Body>
                 </div>
 
-                <div className="card3">
+                <div className="jd">
                     <Card.Img variant="top" src="/img/Tienda/mortal-kombat-11.jpg" />
                     <Card.Body>
                         <Card.Title>MORTAL KOMBAT 11</Card.Title>
@@ -60,19 +51,14 @@ function BasicExample() {
                             Español Latino
                             Multijugador local
                             Juego Original y Completo
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-
-
+                        
                         </Card.Text>
                         <Button variant="primary">Comprar</Button>
                     </Card.Body>
                 </div>
 
 
-                <div className="card4">
+                <div className="jd">
                     <Card.Img variant="top" src="/img/Tienda/Call-of-Duty.jpg" />
                     <Card.Body>
                         <Card.Title>CALL OF DUTY: Warzone</Card.Title>

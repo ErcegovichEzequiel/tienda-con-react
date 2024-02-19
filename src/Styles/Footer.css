@@ -140,13 +140,13 @@
         height: 1150px;
     }
 
-    .redessociales {
+    /* .redessociales {
         margin-top: 10px;
         margin-left: 40%;
         grid-column: 1;
         grid-row: 1;
         width: 10%;
-    }
+    } */
 
     .redessociales .redesicon {
         margin-left: 35px;
