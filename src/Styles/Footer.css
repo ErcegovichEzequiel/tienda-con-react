@@ -134,45 +134,54 @@
 }
 
 /* Consultas de medios para 500px */
-@media (min-width: 300) and (max-width: 500px) {
+@media (max-width: 500px) {
+   
+   
     #footer {
-        grid-template-columns: 1fr;
+        grid-template-rows: repeat (3, 1fr);
+        width: auto;
         height: 1150px;
+        
     }
 
-    /* .redessociales {
-        margin-top: 10px;
-        margin-left: 40%;
-        grid-column: 1;
+    #footer .redessociales{
         grid-row: 1;
-        width: 10%;
-    } */
+        margin-left: 25px;
 
-    .redessociales .redesicon {
-        margin-left: 35px;
     }
 
-    .form {
-        grid-column: 1;
+    #footer .redessociales h3{
+
+        margin-left: 25px;
+    }
+
+
+
+    .form{
+
         grid-row: 2;
-        width: 10%;
-        margin-left: 40%;
+        margin-left: -380px;
     }
 
-    .form .formulario-caja {
-        margin-left: -50px;
+    .form .contacto{
+        width: 150px;
+        margin-left: 15px;
     }
 
-    .form .formulario-txt {
-        margin-left: -50px;
+    .form .contacto .formulario-caja{
+        width: 200px;
+    }
+
+    .form .contacto .formulario-txt{
+        width: 200px;
     }
 
     .map-container {
-        grid-column: 1;
+
         grid-row: 3;
-        width: 100%;
-        margin-bottom: 3%;
-        /* margin-left: 10%; */
+       
+        
+        margin-left: -300px;
 
     }
 
@@ -191,15 +200,26 @@
     #footer {
 
         height: auto;
+        grid-template-rows: repeat (3, 1fr);
+        ;
     }
+#footer .redessociales.redesicon{
+
+    margin: 0;
+}
+
+
+
 
     .formulario-caja,
     .formulario-txt {
+        grid-row: 2;
         width: 90%;
     }
 
     .map-container,
     .mapa {
+        grid-row: 3;
         height: 300px;
     }
 }
