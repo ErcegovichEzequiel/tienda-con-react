@@ -40,8 +40,9 @@
     width: 580px;
     height: 600px;
     display: block;
+    color: white;
     margin: 30px 10px 10px 10px;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 10px;
     background:transparent;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
@@ -51,7 +52,9 @@
     border: solid 2px black;
     box-shadow: 0 0 15px rgb(255, 140, 0);
 }
-
+.jgeneral .jd .botonTienda{
+    margin-top: 10px;
+}
 .jd h3 {
     text-align: center;
     margin-top: 10px;
@@ -109,10 +112,11 @@
 @media screen and (max-width: 500px) {
     .jd {
         width: 100%;
+        height: auto;
         
     }
     .jgeneral{
-        width: 65%;
+        /* width: 65%; */
         display: flex;
     }
     

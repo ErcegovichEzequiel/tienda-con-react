@@ -35,16 +35,21 @@ export const IniciaSesion = () => {
                     <p className="iconinpu"><RiLockPasswordFill /></p>
 
                 </div>
+                
                 <div className="recordarme">
                     <input type="checkbox" className="check" />
                     <p className="recordarmeP">Recordarme</p>
-
                 </div>
+
                 <Link to="/" className="omc">Olvide mi contraseña</Link>
+
                 <button type="submit" className="btn" onClick={handleButtonClick}>Ingresar</button>
+
                 <br />
+                
                 <div className="registrameInicioSesion">
-                    <p>No tiene cuenta?</p> <Link className="linkRecordarme" to="/src/Components/Registrarme">Registrate</Link>
+                    <p>No tiene cuenta?</p> 
+                    <Link className="linkRecordarme" to="/src/Components/Registrarme">Registrate</Link>
                 </div>
 
 

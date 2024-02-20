@@ -135,60 +135,52 @@
 
 /* Consultas de medios para 500px */
 @media (max-width: 500px) {
-   
-   
+
+
     #footer {
         grid-template-rows: repeat (3, 1fr);
         width: auto;
         height: 1150px;
-        
     }
 
-    #footer .redessociales{
+    #footer .redessociales {
         grid-row: 1;
         margin-left: 25px;
-
     }
 
-    #footer .redessociales h3{
-
+    #footer .redessociales h3 {
         margin-left: 25px;
     }
 
-
-
-    .form{
-
+    .form {
         grid-row: 2;
         margin-left: -380px;
     }
 
-    .form .contacto{
+    .form .contacto {
         width: 150px;
         margin-left: 15px;
     }
 
-    .form .contacto .formulario-caja{
+    .form .contacto .formulario-caja {
         width: 200px;
     }
 
-    .form .contacto .formulario-txt{
+    .form .contacto .formulario-txt {
         width: 200px;
     }
 
     .map-container {
-
         grid-row: 3;
-       
-        
-        margin-left: -300px;
-
     }
 
+    .map-container .mapa {
+        align-items: center;
+        margin-left: -250px;
+    }
 
     .derechos {
-
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -203,10 +195,11 @@
         grid-template-rows: repeat (3, 1fr);
         ;
     }
-#footer .redessociales.redesicon{
 
-    margin: 0;
-}
+    #footer .redessociales.redesicon {
+
+        margin: 0;
+    }
 
 
 

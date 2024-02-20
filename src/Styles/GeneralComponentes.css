@@ -13,16 +13,16 @@ body {
     width: 90%;
     height: auto;
     margin: 5%;
-        /* PATRON */
-        --s: 200px;
-        --c1: #1d1d1d;
-        --c2: #4e4f51;
-        --c3: #3c3c3c;
-        background:
-            repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-            repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
-        background-size: var(--s) calc(var(--s)*0.577);
-        box-shadow: 0 0 20px rgb(0, 0, 0);
+    /* PATRON */
+    --s: 200px;
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .cform {
@@ -51,9 +51,10 @@ body {
     align-items: center;
     padding: 15px;
     margin: 3%;
-    color: rgb(255, 140, 0);
+    /* color: rgb(255, 140, 0); */
 }
-.cform .bartex .bartexInput{
+
+.cform .bartex .bartexInput {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.268);
     width: 250px;
@@ -114,10 +115,11 @@ body {
 }
 
 .recordarme .recordarmeP {
-font-size: 20px;
-font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
-.registrameInicioSesion{
+
+.registrameInicioSesion {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -125,16 +127,19 @@ font-family: 'Courier New', Courier, monospace;
     align-content: space-around;
 
 }
-.registrameInicioSesion .linkRecordarme{
+
+.registrameInicioSesion .linkRecordarme {
     text-decoration: none;
     color: white;
     margin-left: 10px;
 }
-.registrameInicioSesion .linkRecordarme:hover{
+
+.registrameInicioSesion .linkRecordarme:hover {
     color: cadetblue;
     font-size: 18px;
 }
-.omc{
+
+.omc {
     font-size: 15px;
     text-decoration: none;
     color: white;
@@ -143,7 +148,8 @@ font-family: 'Courier New', Courier, monospace;
     align-items: baseline;
     justify-content: center;
 }
-.omc:hover{
+
+.omc:hover {
     color: cadetblue;
     font-size: 18px;
 }
@@ -166,7 +172,27 @@ font-family: 'Courier New', Courier, monospace;
     margin-left: 40%;
     margin-bottom: 25px;
 }
-.cform .btn:hover{
+
+.cform .btnCarrito {
+    background-color: rgb(109, 180, 182);
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.cform .btnCarrito:hover {
+    color: white;
+}
+
+.cform .btn:hover {
     color: white;
 }
 
@@ -183,8 +209,32 @@ font-family: 'Courier New', Courier, monospace;
     width: 80%;
 }
 
+/* REGISTRO */
+.formulario .registrarmeIniciarSesion {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    align-content: space-around;
+}
 
-   
+.formulario .registrarmeIniciarSesion .RegIniSesion {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.formulario .registrarmeIniciarSesion .RegIniSesion:hover {
+    color: cadetblue;
+    font-size: 18px;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 10px;
+}
 
 /* Consultas de medios para 500px */
 @media (max-width: 500px) {
@@ -202,10 +252,10 @@ font-family: 'Courier New', Courier, monospace;
         max-width: unset;
     }
 
-    .recordarme {
+    .cform .recordarme {
         width: 100%;
-        margin-left: 0;
-        justify-content: flex-start;
+        text-align: center;
+        justify-content: center;
     }
 
     .cform .btn {

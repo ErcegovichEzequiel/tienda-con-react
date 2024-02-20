@@ -23,9 +23,8 @@ function BasicExample() {
                             Español latino
                             Multijugador local
                             Juego Original y Completo
-
                         </Card.Text>
-                        <Button variant="primary">Comprar</Button>
+                        <Button variant="primary" className='botonTienda'>Comprar</Button>{' '}
                     </Card.Body>
                 </div>
 
@@ -37,7 +36,7 @@ function BasicExample() {
                             Esta entrega de la saga combina historia y jugabilidad de una forma totalmente nueva y permite a los jugadores asumir un rol dentro del juego como estafador callejero, ex convicto o maníaco para construir su propio imperio criminal en una ciudad en decadencia.
 
                         </Card.Text>
-                        <Button variant="primary">Comprar</Button>
+                        <Button variant="primary" className='botonTienda'>Comprar</Button>
                     </Card.Body>
                 </div>
 
@@ -53,7 +52,7 @@ function BasicExample() {
                             Juego Original y Completo
                         
                         </Card.Text>
-                        <Button variant="primary">Comprar</Button>
+                        <Button variant="primary" className='botonTienda'>Comprar</Button>
                     </Card.Body>
                 </div>
 
@@ -69,7 +68,7 @@ function BasicExample() {
                             Multijugador local
                             Juego Original y Completo
                         </Card.Text>
-                        <Button variant="primary">Comprar</Button>
+                        <Button variant="primary" className='botonTienda'>Comprar</Button>
                     </Card.Body>
                 </div>
 

@@ -56,12 +56,8 @@ export const Carrito = () => {
                     <input className="bartexInput" type="text" placeholder="Código Postal Ej: 1856" />
                 </div>
 
-                <div className="recordarme">
-                <input type="checkbox" className="check"/>
-                </div>
-
                 <div className="bartex">
-                    <button type="submit" className="btn">Enviar</button>
+                    <button type="submit" className="btnCarrito">Enviar</button>
                 </div>
             </form>
         </section>

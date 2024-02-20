@@ -2,10 +2,6 @@
 export const JuegosDestacados = () => {
     return (
         <>
-            {/* <div className="desta">
-                <h3 className="destaH3">Destacados</h3>
-            </div> */}
-
             <section className="jgeneral">
                 <div className="jd">
                     <h3>¡Destacados del Mes!</h3>

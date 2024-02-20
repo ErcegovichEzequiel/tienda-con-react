@@ -13,7 +13,7 @@ function Banner() {
         <>
             <Navbar className='navSup'>
                 <Nav className="navListaGeneral">
-                    <Link className='navLista' to="/src/Components/IniSesion/IniciaSesion.jsx">Inisio de Sesión</Link>
+                    <Link className='navLista' to="/src/Components/IniSesion/IniciaSesion.jsx">Inicio de Sesión</Link>
                     <Link className='navLista' to="/src/Components/Registrarme">Regístrate</Link>
                     <Link className='navLista' to="/src/Components/Carrito/Carrito.jsx"><FaCartShopping /></Link>
                 </Nav>

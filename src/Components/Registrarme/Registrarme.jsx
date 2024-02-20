@@ -1,6 +1,7 @@
 
 import { FaUserLock } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 export const Registrarme = () => {
     return (
@@ -24,7 +25,11 @@ export const Registrarme = () => {
                     <p className="iconinpu"><RiLockPasswordFill /></p>
                 </div>
                 <br />
-                <p>¿Ya tienes cuenta? Inicia Sesión</p>
+                <div className="registrarmeIniciarSesion">
+                <p>¿Ya tienes cuenta? </p>
+                <Link to="/src/Components/IniSesion/IniciaSesion.jsx" className="RegIniSesion">Inicia Sesión</Link>
+                </div>
+                
                 <button type="submit" className="btn">Registrate</button>
             </form>
         </section>
