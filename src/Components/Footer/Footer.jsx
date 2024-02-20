@@ -10,7 +10,7 @@ function Footer() {
     return (
         <footer id="footer">
             <div className="redessociales">
-                <h3>Siguenos</h3>
+                <h3 className="titulosFooter">Siguenos</h3>
                 <div className="redesicon">
                     <li><FaInstagramSquare /></li>
                     <li><FaFacebookSquare /></li>
@@ -19,7 +19,7 @@ function Footer() {
                 </div>
             </div>
             <div className="form">
-                <h3>Contactanos</h3>
+                <h3 className="titulosFooter">Contactanos</h3>
                 <div className="contacto">
                     <input type="email" className="formulario-caja" placeHolder="E-mail"></input>
                 </div>
@@ -33,7 +33,7 @@ function Footer() {
             </div>
 
             <div className="map-container">
-                <h3>Ubicación</h3>
+                <h3 className="titulosFooter">Ubicación</h3>
 
                 <div className="mapa">
                     <MapsAPIgoogle />

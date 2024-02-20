@@ -4,7 +4,7 @@
     font-size: 16px;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(1, 1fr, 1fr, 1fr);
+    grid-template-columns: 25% 25%  50%;
     /* PATRON */
     --s: 200px;
     --c1: #1d1d1d;
@@ -21,11 +21,11 @@
     grid-column: 1;
     margin-top: 5px;
     color: rgb(255, 255, 255);
-    margin-left: 150px;
+    
     text-align: center;
     list-style: none;
     margin-bottom: 10px;
-    width: 250px;
+    
     /* border: solid 2px white; */
 }
 
@@ -39,14 +39,14 @@
 /* Formulario de contacto */
 .form {
     grid-column: 2;
-    text-align: center;
+    
     padding: 5px;
     color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-bottom: 10px;
     /* border: solid 2px rgb(255, 255, 255); */
-    width: 300px;
-    margin-left: -150px;
+    
+    
 }
 
 .form .btn {
@@ -99,13 +99,14 @@
 .map-container {
     /* border: solid 2px white; */
     grid-column: 3;
+  
     grid-row: 1;
     padding: 5px;
     color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 100%;
-    margin-left: -150px;
+    
+    
 }
 
 .mapContainer {
@@ -116,6 +117,7 @@
     margin: 10%;
     margin-bottom: 2%;
 }
+
 
 /* DERECHOS */
 
@@ -138,23 +140,31 @@
 
 
     #footer {
-        grid-template-rows: repeat (3, 1fr);
+        
         width: auto;
-        height: 1150px;
+        height: auto;
+        margin: 26px;
+        
     }
 
     #footer .redessociales {
         grid-row: 1;
+        
         margin-left: 25px;
     }
 
-    #footer .redessociales h3 {
-        margin-left: 25px;
+    #footer .redessociales .titulosFooter {
+        text-align: center;
     }
 
     .form {
         grid-row: 2;
-        margin-left: -380px;
+        
+        
+    }
+    #footer .form .titulosFooter{
+        text-align: center;
+        
     }
 
     .form .contacto {
@@ -172,6 +182,11 @@
 
     .map-container {
         grid-row: 3;
+    }
+
+    .map-container .titulosFooter{
+        text-align: center;
+        
     }
 
     .map-container .mapa {
