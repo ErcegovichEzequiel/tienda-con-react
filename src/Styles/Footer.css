@@ -121,15 +121,14 @@
     #footer {
         display: grid;
         grid-template-columns: 100%; /* 1 sola columna al 100% del ancho total*/
-        width: 100%;
+        width: auto;
         height: 100%;
-       
-        
     }
 
 
     .form {
-        grid-row: 2;        
+        grid-row: 2;
+        margin: 0;        
     }
 
     .form .contacto .formulario-caja {
@@ -143,7 +142,9 @@
     .map-container {
         grid-column: 1;
         grid-row: 3;
-        margin: 10px;
+        
+        
+ 
     }
 
 
