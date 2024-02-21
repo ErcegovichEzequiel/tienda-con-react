@@ -1,10 +1,10 @@
 #footer {
     width: 100%;
-    padding: 1px 1px;
+    height: 50%;
     font-size: 16px;
     text-align: center;
     display: grid;
-    grid-template-columns: 25% 25%  50%;
+    grid-template-columns: auto auto auto; /* 3 columnas: redes sociales de 25%, contacto de 25%, y mapa de 50% */
     /* PATRON */
     --s: 200px;
     --c1: #1d1d1d;
@@ -18,15 +18,14 @@
 
 /* Redes Sociales */
 .redessociales {
-    grid-column: 1;
-    margin-top: 5px;
-    color: rgb(255, 255, 255);
     
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
     text-align: center;
     list-style: none;
     margin-bottom: 10px;
     
-    /* border: solid 2px white; */
+    
 }
 
 .redesicon {
@@ -38,15 +37,11 @@
 
 /* Formulario de contacto */
 .form {
-    grid-column: 2;
-    
     padding: 5px;
     color: rgb(255, 255, 255);
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    /* border: solid 2px rgb(255, 255, 255); */
-    
-    
+        
 }
 
 .form .btn {
@@ -91,33 +86,17 @@
 
 }
 
-.contactar {
-    margin-top: 25px;
-}
-
 /* Mapa  */
+
 .map-container {
-    /* border: solid 2px white; */
+
     grid-column: 3;
-  
-    grid-row: 1;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    margin-top: 5px;
-    margin-bottom: 10px;
-    
-    
-}
-
-.mapContainer {
     height: 300px;
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 5px 2px 10px black;
-    margin: 10%;
-    margin-bottom: 2%;
+    width: 90%;
+    grid-row: 1;
+    color: rgb(255, 255, 255);
+    margin: 20px;    
 }
-
 
 /* DERECHOS */
 
@@ -140,36 +119,17 @@
 
 
     #footer {
-        
-        width: auto;
-        height: auto;
-        margin: 26px;
+        display: grid;
+        grid-template-columns: 100%; /* 1 sola columna al 100% del ancho total*/
+        width: 100%;
+        height: 100%;
+       
         
     }
 
-    #footer .redessociales {
-        grid-row: 1;
-        
-        margin-left: 25px;
-    }
-
-    #footer .redessociales .titulosFooter {
-        text-align: center;
-    }
 
     .form {
-        grid-row: 2;
-        
-        
-    }
-    #footer .form .titulosFooter{
-        text-align: center;
-        
-    }
-
-    .form .contacto {
-        width: 150px;
-        margin-left: 15px;
+        grid-row: 2;        
     }
 
     .form .contacto .formulario-caja {
@@ -181,21 +141,15 @@
     }
 
     .map-container {
+        grid-column: 1;
         grid-row: 3;
+        margin: 10px;
     }
 
-    .map-container .titulosFooter{
-        text-align: center;
-        
-    }
 
-    .map-container .mapa {
-        align-items: center;
-        margin-left: -250px;
-    }
 
     .derechos {
-        width: auto;
+        width: 100%;
     }
 }
 

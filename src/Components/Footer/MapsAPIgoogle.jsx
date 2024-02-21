@@ -44,7 +44,7 @@ function MapsAPIgoogle() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded]) // Incluye `loaded` en el array de dependencias para que el efecto se vuelva a ejecutar cuando cambie
 
-  return <div ref={mapContainerRef} className='mapContainer'></div>
+  return <div ref={mapContainerRef} className='map-container'></div>
 }
 
 export default MapsAPIgoogle
